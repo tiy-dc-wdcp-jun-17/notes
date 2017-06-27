@@ -1,0 +1,8 @@
+Pry.config.theme = "pry-modern-256"
+
+# Obtain the present woking directory
+#
+current_dir = Dir.pwd
+if current_dir =~ /^(.*?\/Desktop\/class)/
+  Pry.config.history.file = File.join(File.expand_path(Dir.pwd), "pry_history.rb")
+end

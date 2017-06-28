@@ -1,0 +1,36 @@
+@font-face {
+    font-family: system;
+    font-style: normal;
+    font-weight: 300;
+    src: local(".SFNSText-Light"),local(".HelveticaNeueDeskInterface-Light"),local(".LucidaGrandeUI"),local("Ubuntu Light"),local("Segoe UI Light"),local("Roboto-Light"),local("DroidSans"),local("Tahoma")
+}
+
+body {
+  margin: 0;
+  font-family: system;
+}
+
+header {
+  background-image: url('https://apod.nasa.gov/apod/image/1706/M20_M21CompositeMP.jpg');
+  background-size: cover;
+  height: 300px;
+  text-align: center;
+  color: white;
+  padding-top: 10%;
+}
+
+#background-title {
+  font-size: 10px;
+}
+
+.person {
+  background-color: rgba(0,0,0,0.5);
+  margin: 20px 200px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+.person span {
+  float: right;
+}

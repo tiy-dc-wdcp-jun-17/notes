@@ -26,9 +26,15 @@ fi
 
 # Define colors
 Reset=$(tput sgr0)
+Underline=$(tput sgr 0 1)
+Bold=$(tput bold)
 Red=$(tput setaf 1)
 Green=$(tput setaf 2)
+Yellow=$(tput setaf 3)
+Blue=$(tput setaf 4)
+Purple=$(tput setaf 5)
 Cyan=$(tput setaf 6)
+White=$(tput setaf 7)
 
 ps1_true_false_mark() {
   if [[ $? == 0 ]]; then

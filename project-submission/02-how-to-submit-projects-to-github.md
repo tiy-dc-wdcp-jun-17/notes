@@ -53,7 +53,7 @@ git log
 ## Create Github Project
 
 1. Create a Github project with the same name as the project
-   directory, such as `puppy_love` or `ibeer`.
+   directory, such as `puppy_love` or `isoda`.
 2. Add the Github git remote.
 
 ```sh

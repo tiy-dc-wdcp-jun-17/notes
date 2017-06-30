@@ -5,3 +5,6 @@ PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin
 PATH=$HOME/bin:$PATH
 
 export PATH
+
+# Simple prompt for non-login shell
+export PS1='\w \n$ '

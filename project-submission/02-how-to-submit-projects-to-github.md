@@ -9,13 +9,25 @@ See [01-one-time-setup.md](01-one-time-setup.md).
 1. Download the `.zip` file from the project page.
 2. Extract the `.zip` file contents.
 3. Rename (`mv`) the project directory to something simple, such as
-   `puppy_love` or `ibeer`.
+   `puppy_love` or `isoda`.
 4. Move (`mv`) the project directory to `~/code/`.
 5. Change (`cd`) to the project directory.
-6. Initialize git add all the files.
+6. Initialize git only once.
 
 ```sh
 git init
+```
+
+`git init` creates a `.git` directory in your project directory. You
+can list the `.git` directory with:
+
+```sh
+ls -a
+```
+
+7. Add all the files.
+
+```sh
 git add .
 ```
 
@@ -25,7 +37,7 @@ You can check the above command with:
 git status
 ```
 
-7. Make the initial commit.
+8. Make the initial commit.
 
 ```sh
 git commit -m 'Initial commit'

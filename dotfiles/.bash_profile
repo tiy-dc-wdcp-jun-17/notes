@@ -15,7 +15,7 @@ fi
 export PS1='$(ps1_true_false_mark) $(ps1_git)${Green}\w${Reset} \n$ '
 
 # Bash History Size. History is stored in ~/.bash_history.
-# The bash command, history, will print previous command.
+# The bash command, history, will print previous commands.
 export HISTSIZE=10000
 export HISTFILESIZE=$HISTSIZE
 

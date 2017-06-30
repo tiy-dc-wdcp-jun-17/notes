@@ -3,8 +3,7 @@
 ## Make the "~/code" directory
 
 ```sh
-cd ~
-mkdir code
+mkdir ~/code
 ```
 
 ## Set your git user and email
@@ -24,7 +23,8 @@ git config --global user.name 'your_name'
 git config --global user.email 'your_name@domain.com'
 ```
 
-This git configuration can be checked with:
+To check if your name and email were added to your git commit
+successfully:
 
 ```sh
 cd ~/code/<project_name>

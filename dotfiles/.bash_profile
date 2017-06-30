@@ -1,4 +1,4 @@
-# Load bash remote command configuration
+# Load bash non-login configuration
 if [[ -f ~/.bashrc ]]; then
   source ~/.bashrc
 fi

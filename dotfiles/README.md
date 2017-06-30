@@ -2,7 +2,7 @@
 
 ## Features
 
-1. Prompt (`$B`)
+1. Prompt (`$PS1`)
 2. Bash completion
 3. Increased bash history size
 

@@ -1,0 +1,25 @@
+body {
+  margin: 0 auto;
+  width: 900px;
+  font-family: sans-serif;
+}
+
+main {
+  padding: 10px 0;
+}
+main img {
+  width: 100%;
+
+}
+
+a {
+  color: #fff;
+  background-color: green;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+hr {
+  margin: 5px;
+}

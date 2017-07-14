@@ -44,14 +44,14 @@ function arrayCombos() {
   let combos = [];
 
   for (let j = 0; j < singles.length; j++) {
-    for (var k = 0; k < singles.length; k++) {
+    for (let k = 0; k < singles.length; k++) {
       combos.push([singles[j], singles[k]]);
     }
   }
 
   // let position = 0;
   // for (let j = 0; j < singles.length; j++) {
-  //   for (var k = 0; k < singles.length; k++) {
+  //   for (let k = 0; k < singles.length; k++) {
   //     combos[position] = ([singles[j], singles[k]]);
   //     position++;
   //   }

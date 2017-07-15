@@ -1,0 +1,32 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: 0.25s;
+}
+
+section {
+  flex-basis: 100%;
+}
+
+button {
+  padding: 40px;
+  width: 10%;
+  color: #fff;
+  background-color: rgb(255, 38, 38);
+  border: none;
+  border-radius: 10px;
+}
+
+h1 {
+
+  font-size: 15em;
+  margin: 0;
+  text-align: center;
+}

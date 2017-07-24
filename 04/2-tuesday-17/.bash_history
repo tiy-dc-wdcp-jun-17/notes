@@ -5,4 +5,5 @@ curl https://www.youtube.com
 curl icanhazip.com
 curl -v icanhazip.com
 atom .
+open .
 exit

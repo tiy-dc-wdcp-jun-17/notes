@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Student Tracker</title>
+  </head>
+  <body>
+
+    <form action="" method="post">
+      <label for="studentName">Student Name</label>
+      <input id="studentName"type="text" name="studentName" value="">
+      <button type="submit" name="button">Add To Class</button>
+    </form>
+
+    <ul>
+      {{#students}}
+        <li>
+          {{name}}
+
+          <small>{{createdAt}}</small>
+        </li>
+      {{/students}}
+    </ul>
+  </body>
+</html>

@@ -63,7 +63,9 @@ You can combine this activity with the 20-20-20 rule above.
 
 ## Wrist/Finger/Arm Strain
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uPO-zST-7EE" frameborder="0" allowfullscreen></iframe>
+<a href="https://www.youtube.com/embed/uPO-zST-7EE"><img src="https://img.youtube.com/vi/uPO-zST-7EE/0.jpg"></a>
+
+Check out the <a href="https://www.youtube.com/embed/uPO-zST-7EE">video on Youtube</a>.
 
 ## Time Management - Pomodoro Technique
 

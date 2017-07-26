@@ -12,13 +12,10 @@ app.set('view engine', 'mustache');
 // Set where we store our views
 app.set('views', __dirname + '/views');
 
-// ?studentName="Emily%20D"&button=
+
+// Setup Body Parser
 const bodyParser = require('body-parser');
-
 app.use(bodyParser.urlencoded({extended: false}));
-
-
-
 
 let students = []
 
@@ -26,9 +23,9 @@ app.get("/", (req, res) => {
   res.render("index", {students: students})
 });
 
-
+// ?studentName="Emily%20D"&button=
 app.post("/", (req, res) => {
-  console.log("IAM THE POST ENDPOINT HEAR ME ROAR!!!!!");
+  console.log("New Post request", req.body);
   students.push({
     name: req.body.studentName,
     createdAt: new Date()

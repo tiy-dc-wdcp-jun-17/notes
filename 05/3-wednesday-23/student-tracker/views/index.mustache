@@ -5,8 +5,19 @@
     <title>Student Tracker</title>
   </head>
   <body>
+    <style media="screen">
+      .error {
+        color: white;
+        background-color: red;
+        padding:10px;
+        border-radius: 5px;
+      }
+    </style>
 
-    <form action="" method="post">
+    {{#error}}
+      <p class="error"><strong>Danger</strong>{{.}}</p>
+    {{/error}}
+    <form action="/students" method="post">
       <label for="studentName">Student Name</label>
       <input id="studentName"type="text" name="studentName" value="">
       <button type="submit" name="button">Add To Class</button>

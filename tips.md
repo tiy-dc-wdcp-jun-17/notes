@@ -121,3 +121,26 @@ the
 >yourself looking forward to both the breaking and working parts of the
 >cycle. (Dang, how's that for a change?)
 
+## Napping - 12, 30, 60
+
+Check out ["How Long to Nap for the Biggest Brain Benefits" on Lifehacker](http://lifehacker.com/how-long-to-nap-for-the-biggest-brain-benefits-1251546669).
+
+>For a quick boost of alertness, experts say a 10-to-20-minute power
+>nap is adequate for getting back to work in a pinch.
+>
+>For cognitive memory processing, however, a 60-minute nap may do more
+>good, Dr. Mednick said. Including slow-wave sleep helps with
+>remembering facts, places and faces. The downside: some grogginess
+>upon waking.
+>
+>Finally, the 90-minute nap will likely involve a full cycle of sleep,
+>which aids creativity and emotional and procedural memory, such as
+>learning how to ride a bike. Waking up after REM sleep usually means
+>a minimal amount of sleep inertia, Dr. Mednick said.
+
+**Recommendation:** 12 minutes
+
+If you are feeling sluggish at work and are lucky enough to be able to
+nap at work, try a 12-minute power nap to boost your
+energy. Experiment within the range of 10 to 20 minutes to find what
+works best for you.

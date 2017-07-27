@@ -18,7 +18,8 @@ router.get("/", (req, res) => {
 
   res.render("index", {
     students: students,
-    studentsThatStartWithLetterE:  studentsThatStartWithLetterE
+    studentsThatStartWithLetterE:  studentsThatStartWithLetterE,
+    loggedInUser: req.session.name
   });
 });
 

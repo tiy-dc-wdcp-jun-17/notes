@@ -4,6 +4,7 @@ const mustacheExpress = require("mustache-express");
 const bodyParser = require("body-parser");
 const expressValidator = require("express-validator");
 const url = require("url")
+const morgan = require('morgan');
 
 // Register '.mustache' extension with The Mustache Express
 app.engine("mustache", mustacheExpress());
@@ -23,6 +24,15 @@ app.use(expressValidator());
 // Our Custom Logger
 const bestLogger = require("./bestLogger");
 app.use(bestLogger(true));
+
+const fs = require('fs');
+const logStream = fs.createWriteStream(__dirname + '/access.log', {flags: 'a'})
+
+app.use(morgan('common', {
+  stream: logStream
+}))
+
+app.use(morgan('dev'))
 
 
 // Best LowerCase Path Maker thing

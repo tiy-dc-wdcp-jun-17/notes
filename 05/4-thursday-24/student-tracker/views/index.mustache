@@ -33,5 +33,20 @@
       {{/students}}
     </ul>
 
+    <a href="/pick-a-random-student" target="_blank">Go to other place</a>
+
+
+    <h1>E Level Students</h1>
+
+    <ul>
+      {{#studentsThatStartWithLetterE}}
+        <li>
+          {{name}}
+
+          <small>{{createdAt}}</small>
+        </li>
+      {{/studentsThatStartWithLetterE}}
+    </ul>
+
   </body>
 </html>

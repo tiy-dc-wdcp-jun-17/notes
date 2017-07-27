@@ -4,9 +4,28 @@ const router = express.Router();
 let students = [];
 
 router.get("/", (req, res) => {
+
+  // let studentsThatStartWithLetterE = [];
+  // students.forEach((student) => {
+  //   if (student.name.toLowerCase() === "e") {
+  //     studentsThatStartWithLetterE.push(student);
+  //   }
+  // })
+
+  let studentsThatStartWithLetterE = students.filter((student) => {
+    return student.name[0].toLowerCase() === "e"
+  })
+
   res.render("index", {
-    students: students
+    students: students,
+    studentsThatStartWithLetterE:  studentsThatStartWithLetterE
   });
+});
+
+router.get("/pick-a-random-student", (req, res) => {
+  let randomStudent = students[Math.floor(Math.random() * students.length)]
+
+  res.render("showStudent", {student: randomStudent})
 });
 
 router.post("/students", (req, res) => {

@@ -13,7 +13,6 @@ app.set('view engine', 'mustache');
 // Set where we store our views
 app.set('views', __dirname + '/views');
 
-
 // Setup Body Parser
 app.use(bodyParser.urlencoded({extended: false}));
 

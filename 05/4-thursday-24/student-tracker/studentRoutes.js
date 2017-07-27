@@ -1,11 +1,18 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
 
-let students = []
+let students = [];
 
 router.get("/", (req, res) => {
-  debugger
-  res.render("index", {students: students})
+  console.log(Object.entries(req.session.views).map((k, v) => {
+    return { key: k, value: v };
+  }));
+  res.render("index", {
+    students: students,
+    views: Object.entries(req.session.views).map((view) => {
+      return { key: view[0], value: view[1] };
+    })
+  });
 });
 
 // ?studentName="Emily%20D"&button=
@@ -22,20 +29,20 @@ router.get("/", (req, res) => {
 
 router.post("/students", (req, res) => {
   console.log("New Post request", req.body);
-  req.checkBody("studentName", "You must provide a name.").notEmpty()
+  req.checkBody("studentName", "You must provide a name.").notEmpty();
 
-  req.getValidationResult().then((result) => {
+  req.getValidationResult().then(result => {
     if (!result.isEmpty()) {
-      res.render("index", {error: "You made mistake broasauras Rex"});
+      res.render("index", { error: "You made mistake broasauras Rex" });
       return;
     }
 
     students.push({
       name: req.body.studentName,
       createdAt: new Date()
-    })
-    res.redirect("/")
-  })
-})
+    });
+    res.redirect("/");
+  });
+});
 
-module.exports = router
+module.exports = router;

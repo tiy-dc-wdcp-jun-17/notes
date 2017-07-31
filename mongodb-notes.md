@@ -18,18 +18,8 @@ mkdir /data/db
 
 ## Start
 
-### Method #1
-
 In a dedicated terminal window or tab, run:
 
 ```sh
 mongod
-```
-
-### Method #2
-
-To have `launchd` start mongodb now and restart at login:
-
-```sh
-brew services start mongodb
 ```

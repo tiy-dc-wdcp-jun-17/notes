@@ -6,7 +6,8 @@ body {
   padding: 5px;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   border-radius: 3px;
   padding: 5px;
@@ -15,11 +16,11 @@ input, textarea {
   border: 1px solid #444;
 }
 
-label{
+label {
   margin: 5px;
 }
 
-button{
+button {
   color: white;
   background-color: green;
   border: none;

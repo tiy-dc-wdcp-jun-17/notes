@@ -23,3 +23,7 @@ In a dedicated terminal window or tab, run:
 ```sh
 mongod
 ```
+
+## Stop
+
+To stop MongoDB, press `CONTROL-C`.

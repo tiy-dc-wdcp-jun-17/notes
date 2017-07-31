@@ -1,4 +1,3 @@
-
 const books = [
   {
     id: 1,
@@ -39,8 +38,16 @@ function findById(id) {
   });
 }
 
-module.exports = {
-  "all": books,
-  "filterByAuthorId": filterByAuthorId,
-  "findById" : findById
+function create(bookAttributes) {
+  bookAttributes.id = books.length + 1
+  books.push(bookAttributes)
+
+  return books;
 }
+
+module.exports = {
+  create: create,
+  all: books,
+  filterByAuthorId: filterByAuthorId,
+  findById: findById
+};

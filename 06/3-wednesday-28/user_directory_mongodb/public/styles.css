@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 10px;
+  font-family: arial;
+  font-size: 12px;
+}
+
+.name {
+  color: blue;
+  font-size: 14px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+}
+
+div {
+  border: 1px solid lightgrey;
+  padding: 5px;
+  margin: 5px;
+  width: 200px;
+  align-items: center;
+}
+
+.avail {
+  color: indianred;
+}
+
+#extension-is-installed {
+  display: none;
+}

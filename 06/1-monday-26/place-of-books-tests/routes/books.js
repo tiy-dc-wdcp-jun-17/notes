@@ -18,6 +18,7 @@ router.get("/authors/:authorId/books/:id", (req, res) => {
 });
 
 router.post("/authors/:authorId/books", (req, res) => {
+  throw new Error()
   Book.create({
     authorId: req.params.authorId,
     title: req.body.title,
@@ -25,7 +26,7 @@ router.post("/authors/:authorId/books", (req, res) => {
     coverUrl: req.body.coverUrl
   });
 
-  res.redirect(`/authors/${req.params.authorId}`);
+  // res.redirect(`/authors/${req.params.authorId}`);
 });
 
 module.exports = router;

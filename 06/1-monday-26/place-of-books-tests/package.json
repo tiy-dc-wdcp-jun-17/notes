@@ -1,0 +1,23 @@
+{
+  "name": "place-of-books",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon --inspect . -e js,mustache",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-validator": "^3.2.1",
+    "mustache-express": "^1.2.5"
+  },
+  "devDependencies": {
+    "jest": "^20.0.4",
+    "supertest": "^3.0.0"
+  }
+}

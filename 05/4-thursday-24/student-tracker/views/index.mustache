@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Student Tracker</title>
+  </head>
+  <body>
+    <style media="screen">
+      .error {
+        color: white;
+        background-color: red;
+        padding:10px;
+        border-radius: 5px;
+      }
+    </style>
+
+    {{#loggedInUser}}
+      Welcome, {{.}}
+    {{/loggedInUser}}
+
+    {{^loggedInUser}}
+      Do you want to take the blue pill or the red pill Neo?
+    {{/loggedInUser}}
+
+    {{#error}}
+      <p class="error"><strong>Danger</strong>{{.}}</p>
+    {{/error}}
+    <form action="/students" method="post">
+      <label for="studentName">Student Name</label>
+      <input id="studentName"type="text" name="studentName" value="">
+      <button type="submit" name="button">Add To Class</button>
+    </form>
+
+    <ul>
+      {{#students}}
+        <li>
+          {{name}}
+
+          <small>{{createdAt}}</small>
+        </li>
+      {{/students}}
+    </ul>
+
+    <a href="/pick-a-random-student" target="_blank">Go to other place</a>
+
+
+    <h1>E Level Students</h1>
+
+    <ul>
+      {{#studentsThatStartWithLetterE}}
+        <li>
+          {{name}}
+
+          <small>{{createdAt}}</small>
+        </li>
+      {{/studentsThatStartWithLetterE}}
+    </ul>
+
+  </body>
+</html>

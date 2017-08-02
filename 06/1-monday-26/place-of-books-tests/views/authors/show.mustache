@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Place of Books</title>
+    <link rel="stylesheet" href="/public/stylesheets/normalize.css">
+    <link rel="stylesheet" href="/public/stylesheets/styles.css">
+    <script defer src="/public/javascript/main.js" charset="utf-8"></script>
+
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/authors">Authors</a></li>
+      </ul>
+    </nav>
+    <main>
+
+      {{#author}}
+
+        <h1>{{ name }}</h1>
+
+        <p>{{ bio }}</p>
+
+      {{/author}}
+
+      <h2>Books</h2>
+
+      <ul>
+        {{#books}}
+          <li>
+            {{ title }}
+            <a href="/authors/{{authorId}}/books/{{ id }}">Details</a>
+          </li>
+        {{/books}}
+      </ul>
+    </main>
+  </body>
+</html>

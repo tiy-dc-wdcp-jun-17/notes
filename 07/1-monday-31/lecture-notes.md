@@ -198,7 +198,7 @@ When you are looking at results, it's in `vi-mode`:
 psql=> `CONTROL-D` to exit out of psql (same as `\q`)
 ```
 
-### User 1 Rated Movies
+### Links to "What movies has user 1 rated?"
 
 ```sql
 SELECT m.id, m.title, l.tmdb_url
@@ -211,7 +211,7 @@ JOIN (SELECT *
 ON m.id = l.movie_id;
 ```
 
-### Movies with rating of 5
+### Links to "Which movies have a rating of 5?"
 
 ```sql
 SELECT ml.title, ml.url
@@ -226,7 +226,7 @@ JOIN (SELECT movie_id, avg(rating)
 ON ml.movie_id = r.movie_id;
 ```
 
-### Movies with most ratings
+### What movies have the most ratings?
 
 ```sql
 SELECT movie_id, count(movie_id)
@@ -235,7 +235,7 @@ GROUP BY movie_id
 ORDER BY count(movie_id) DESC;
 ```
 
-### Movies (including titles) with most ratings
+### What movies (including titles) have the most ratings?
 
 ```sql
 SELECT m.title, r.rating_count
@@ -247,7 +247,7 @@ JOIN (SELECT movie_id, count(movie_id) AS rating_count
 ON m.id = r.movie_id;
 ```
 
-### Movies with most ratings and best ratings
+### What movies have the best and most ratings?
 
 ```sql
 SELECT movie_id, count(movie_id), avg(rating)
@@ -257,7 +257,7 @@ HAVING avg(rating) >= 4 AND count(movie_id) > 20
 ORDER BY count(movie_id) DESC;
 ```
 
-### Links to movies with most ratings and best ratings
+### Links to "What movies have the best and most ratings?"
 
 ```sql
 SELECT m.title, l.imdb_url

@@ -64,6 +64,7 @@ DESCRIBE TABLE
 <tbody>
 <tr>
 <td>
+
 Table: **t1**
 
 ```text

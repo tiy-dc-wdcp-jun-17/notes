@@ -6,6 +6,7 @@
 * `text` vs `varchar`
 * `bool`
 * `date`
+* `timestamp`
 
 <https://www.postgresql.org/docs/current/static/datatype.html>
 
@@ -190,7 +191,7 @@ Table: **t2**
 3. Write SQL queries to answer those questions.
 
 ```text
-When you are looking a results, it's in `vi-mode`:
+When you are looking at results, it's in `vi-mode`:
   `j` is down, `k` is up, `q` is quit
   `SPACE` is page down, `/` is search
 

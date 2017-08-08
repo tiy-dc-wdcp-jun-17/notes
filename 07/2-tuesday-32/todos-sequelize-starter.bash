@@ -140,6 +140,7 @@ mv index.js.new index.js
 
 echo
 echo "Type:"
+echo "cd ~/code/todosql"
 echo "npm start"
 echo
 echo "Go to http://localhost:3000/todos"

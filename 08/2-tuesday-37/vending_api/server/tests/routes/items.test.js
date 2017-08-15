@@ -8,5 +8,13 @@ describe('Item Router', () => {
           .get("/api/customer/items")
           .expect(200);
       });
+
+      fit('has a status key in json body', () => {
+        return request(app)
+          .get("/api/customer/items")
+          .then((res) => {
+            expect(res.body.status).toEqual("success");
+          })
+      });
     });
 });

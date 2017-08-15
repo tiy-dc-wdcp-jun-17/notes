@@ -1,0 +1,28 @@
+{
+  "name": "tiy-express-base",
+  "version": "0.0.1",
+  "description": "A very basic express app",
+  "repository": "A place on the internet",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "nodemon --inspect . -e js,mustache,ms",
+    "test": "jest --forceExit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-session": "^1.15.4",
+    "express-validator": "^3.2.1",
+    "morgan": "^1.8.2",
+    "mustache-express": "^1.2.5",
+    "pg": "^7.1.2",
+    "sequelize": "^4.5.0"
+  },
+  "devDependencies": {
+    "jest": "^20.0.4",
+    "supertest": "^3.0.0"
+  }
+}

@@ -5,6 +5,11 @@ const Item = db.item;
 
 describe('Item Router', () => {
     describe('GET /api/customer/items - get a list of items', () => {
+
+      afterEach(() => {
+        return Item.destroy({ where: {} })
+      });
+
       it('has successful status code', () => {
         return request(app)
           .get("/api/customer/items")

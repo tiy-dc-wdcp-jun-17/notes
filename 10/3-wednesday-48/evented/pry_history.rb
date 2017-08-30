@@ -1,0 +1,10 @@
+event_params
+event_params[:title]
+params
+params.require("bob")
+params.require("event")
+params["event"]
+params["bob"]
+params.require("event").permit("title")
+params.require("event").permit("title").to_h
+exit

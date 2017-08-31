@@ -6,6 +6,7 @@
   <thead>
     <tr>
       <th>Location</th>
+      <th>Neighborhood</th>
       <th>Bedrooms</th>
       <th>Bathrooms</th>
       <th>Description</th>
@@ -17,6 +18,7 @@
     <% @houses.each do |house| %>
       <tr>
         <td><%= house.location %></td>
+        <td><%= house.neighborhood.name %></td>
         <td><%= house.bedrooms %></td>
         <td><%= house.bathrooms %></td>
         <td><%= house.description %></td>

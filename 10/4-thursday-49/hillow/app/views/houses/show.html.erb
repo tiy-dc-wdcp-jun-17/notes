@@ -20,5 +20,11 @@
   <%= @house.description %>
 </p>
 
+<ul>
+  <% @house.neighborhood.houses.each do |house| %>
+    <li><%= link_to house.location, house_path(house.id) %></li>
+  <% end %>
+</ul>
+
 <%= link_to 'Edit', edit_house_path(@house) %> |
 <%= link_to 'Back', houses_path %>

@@ -26,3 +26,26 @@ my_house = House.first
 my_house.neighborhood
 my_house.neighborhood.name
 exit
+params
+exit
+params
+exit
+params
+exit
+houses_path
+house_path
+neighborhood_path
+params[:id]
+params[:id] = 42
+neighborhood_path
+lenoard_path
+lenoard_path(:bob, 42)
+edit_house_path(32)
+edit_house_path('suitcase')
+houses_path(page: 4)
+houses_path(page: 3, search: {keyword: 'pizza', limit: 4})
+exit
+whereami
+houses_path
+lenoard_path
+exit

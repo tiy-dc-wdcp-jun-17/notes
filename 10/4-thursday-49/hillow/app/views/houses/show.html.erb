@@ -22,9 +22,14 @@
 
 <ul>
   <% @house.neighborhood.houses.each do |house| %>
-    <li><%= link_to house.location, house_path(house.id) %></li>
+    <li><%= link_to house.location, house %></li>
   <% end %>
 </ul>
+
+<%= link_to "thebesturl", "/parties/r/us/best/bamboozle/#{@house.neighborhood.id}" %>
+
+<%= link_to "thebesturl", lenoard_path(:bamboozle, @house.neighborhood.id) %>
+
 
 <%= link_to 'Edit', edit_house_path(@house) %> |
 <%= link_to 'Back', houses_path %>

@@ -1,8 +1,12 @@
 require 'test_helper'
 
 class NeighborhoodsControllerTest < ActionDispatch::IntegrationTest
+  setup do
+    @neighborhood = neighborhoods(:one)
+  end
+
   test "should get show" do
-    get neighborhoods_show_url
+    get neighborhood_url(@neighborhood)
     assert_response :success
   end
 

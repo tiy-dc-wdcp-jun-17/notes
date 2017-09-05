@@ -5,9 +5,11 @@ one:
   bedrooms: 1.5
   bathrooms: 1.5
   description: MyText
+  neighborhood: :one
 
 two:
   location: MyString
   bedrooms: 1.5
   bathrooms: 1.5
   description: MyText
+  neighborhood: :one

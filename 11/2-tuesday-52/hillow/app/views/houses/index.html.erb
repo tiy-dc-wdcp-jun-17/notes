@@ -1,8 +1,8 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Houses</h1>
-
-<table>
+<%= link_to 'New House', new_house_path, class: 'btn btn-success' %>
+<table class='table'>
   <thead>
     <tr>
       <th>Location</th>
@@ -22,7 +22,7 @@
         <td><%= house.bedrooms %></td>
         <td><%= house.bathrooms %></td>
         <td><%= house.description %></td>
-        <td><%= link_to 'Show', house %></td>
+        <td><%= link_to 'Show', house, class: 'btn btn-primary btn-sm' %></td>
         <td><%= link_to 'Edit', edit_house_path(house) %></td>
         <td><%= link_to 'Destroy', house, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
@@ -31,5 +31,3 @@
 </table>
 
 <br>
-
-<%= link_to 'New House', new_house_path %>

@@ -14,7 +14,14 @@ class HousesController < ApplicationController
 
   # GET /houses/new
   def new
-    @house = House.new
+    @neighborhood = Neighborhood.find_by(id: params[:neighborhood_id])
+    unless @neighborhood
+      redirect_to houses_path
+      return
+    end
+
+    @house = House.new(neighborhood_id: @neighborhood.id)
+    # @house.neighborhood_id = @neighborhood.id
   end
 
   # GET /houses/1/edit

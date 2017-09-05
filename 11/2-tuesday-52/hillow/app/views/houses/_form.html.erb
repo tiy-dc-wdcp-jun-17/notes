@@ -16,10 +16,10 @@
     <%= form.text_field :location, id: :house_location %>
   </div>
 
-  <div class="field">
-    <%= form.label :neighborhood_id %>
-    <%= form.text_field :neighborhood_id, id: :house_neighborhood_id %>
-  </div>
+  <%= form.hidden_field :neighborhood_id %>
+
+  <%# form.select :neighborhood_id, options_from_collection_for_select(Neighborhood.all, "id", "name" ), id: :house_neighborhood_id %>
+
 
   <div class="field">
     <%= form.label :bedrooms %>

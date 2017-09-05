@@ -1,6 +1,10 @@
 <h1><%= @neighborhood.name %></h1>
+
+<%= link_to "Create House", new_house_path(neighborhood_id: @neighborhood.id) %>
+
+
 <ul>
-  <% @neighborhood.houses.each do |house| %>
+  <% @houses.each do |house| %>
     <li><%= link_to house.location, house_path(house.id) %></li>
   <% end %>
 </ul>

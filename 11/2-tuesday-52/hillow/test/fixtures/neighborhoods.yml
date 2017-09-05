@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  postal_code: MyString
+  rating: 1.5
+  median_income: 1.5
+
+two:
+  name: MyString
+  postal_code: MyString
+  rating: 1.5
+  median_income: 1.5

@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @house.location %>
+</p>
+
+<p>
+  <strong>Bedrooms:</strong>
+  <%= @house.bedrooms %>
+</p>
+
+<p>
+  <strong>Bathrooms:</strong>
+  <%= @house.bathrooms %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @house.description %>
+</p>
+
+<ul>
+  <% @house.neighborhood.houses.each do |house| %>
+    <li><%= link_to house.location, house %></li>
+  <% end %>
+</ul>
+
+<%= link_to "thebesturl", "/parties/r/us/best/bamboozle/#{@house.neighborhood.id}" %>
+
+<%= link_to "thebesturl", lenoard_path(:bamboozle, @house.neighborhood.id) %>
+
+
+<%= link_to 'Edit', edit_house_path(@house) %> |
+<%= link_to 'Back', houses_path %>

@@ -1,5 +1,9 @@
 {
   "name": "deep_thought",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "bootstrap": "4.0.0-beta",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.11.0"
+  }
 }

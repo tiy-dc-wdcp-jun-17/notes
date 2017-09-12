@@ -1,7 +1,14 @@
-<h1>Speech</h1>
-<%= form_with url: speech_path, local: true do |f| %>
-    <%= f.label :phrase %>
-    <%= f.text_area :phrase %>
+<h1 class="display-1">
+  Your question HUMAN? 🤖
+</h1>
 
-    <%= f.submit "Speak" %>
+<%= form_with url: speech_path, local: true do |f| %>
+    <div class="form-group">
+      <%= f.label :phrase, class: 'sr-only' %>
+      <%= f.text_area :phrase, class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= f.submit "Grant Me Wisdom", class: "btn btn-block btn-primary" %>
+    </div>
 <% end %>

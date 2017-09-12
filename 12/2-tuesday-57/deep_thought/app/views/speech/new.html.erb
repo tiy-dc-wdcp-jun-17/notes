@@ -1,0 +1,7 @@
+<h1>Speech</h1>
+<%= form_with url: speech_path, local: true do |f| %>
+    <%= f.label :phrase %>
+    <%= f.text_area :phrase %>
+
+    <%= f.submit "Speak" %>
+<% end %>
